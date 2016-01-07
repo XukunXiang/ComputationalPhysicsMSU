@@ -14,14 +14,14 @@ I would suggest using the Linux version so that we can make our workflow more ef
 		If you are maining working on HPCC, you should probably choose **Connecting over SSH** 
 
 ###Start working:
-	1. Developing based on an existing project
-		- You need to use ["fork and clone"] (https://help.github.com/articles/fork-a-repo/) to get started.
-		- When copy the clone URL, please choose *SSH* rather then *HTTPS*
-			- It should looks like "git@github.com:XukunXiang/ComputationalPhysicsMSU.git"
+1. Developing based on an existing project
+		* You need to use ["fork and clone"] (https://help.github.com/articles/fork-a-repo/) to get started.
+		* When copy the clone URL, please choose *SSH* rather then *HTTPS*
+			* It should looks like "git@github.com:XukunXiang/ComputationalPhysicsMSU.git"
 
 
-	2. Adding your existing project on GitHub to share with others
-		- [Adding an existing project to Github](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
+1. Adding your existing project on GitHub to share with others
+		* [Adding an existing project to Github](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
 			
 
 
