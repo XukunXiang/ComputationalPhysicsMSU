@@ -16,8 +16,8 @@ I would suggest using the Linux version so that we can make our workflow more ef
 ###Start working:
 * Developing based on an existing project
 		* You need to use ["fork and clone"] (https://help.github.com/articles/fork-a-repo/) to get started.
-		* When copy the clone URL, please choose *SSH* rather then *HTTPS*
-			* It should looks like "git@github.com:XukunXiang/ComputationalPhysicsMSU.git"
+		* When copy the clone URL, please choose *SSH* rather then **HTTPS**
+				* It should looks like "git@github.com:XukunXiang/ComputationalPhysicsMSU.git"
 
 
 * Adding your existing project on GitHub to share with others
