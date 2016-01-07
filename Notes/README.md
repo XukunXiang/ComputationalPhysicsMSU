@@ -8,9 +8,9 @@ Basicallly just go through the [GitHub Bootcamp](https://help.github.com/categor
 I would suggest using the Linux version so that we can make our workflow more efficient.
 
 ###Set up Git and GitHub
-	- Seting up an account on GitHub(_not sure about this one_)
-	- Set up Git with the exact same information(username and email)
-	- Authenticating with GitHub from Git
+1. Seting up an account on GitHub(_not sure about this one_)
+1. Set up Git with the exact same information(username and email)
+1. Authenticating with GitHub from Git
 		If you are maining working on HPCC, you should probably choose **Connecting over SSH** 
 
 ###Start working:
