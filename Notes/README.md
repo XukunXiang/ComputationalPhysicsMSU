@@ -3,14 +3,30 @@
 ## How to use Git(with Github)
 I am a novice for Git, but I will try to cover all the basic commands and procedures (**using git on HPCC**) here.
 
-1. Create an an account on Github
-	- This should be fairly straight forward on Github.com
+Basicallly just go through the [GitHub Bootcamp](https://help.github.com/categories/bootcamp/) and you should be ready to go.
 
-2. Setup your global 'user.name' and 'user.email' in HPCC with the same information
-```
-git config --global user.name "_your user name_" 
-git config --global user.email "_your email_"
-```
+I would suggest using the Linux version so that we can make our workflow more efficient.
 
-### Some good introductry stuff
+###Set up Git and GitHub
+	- Seting up an account on GitHub(_not sure about this one_)
+	- Set up Git with the exact same information(username and email)
+	- Authenticating with GitHub from Git
+		If you are maining working on HPCC, you should probably choose **Connecting over SSH** 
+
+###Start working:
+	1. Developing based on an existing project
+		- You need to use ["fork and clone"] (https://help.github.com/articles/fork-a-repo/) to get started.
+		- When copy the clone URL, please choose *SSH* rather then *HTTPS*
+			- It should looks like "git@github.com:XukunXiang/ComputationalPhysicsMSU.git"
+
+
+	2. Adding your existing project on GitHub to share with others
+		- [Adding an existing project to Github](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
+			
+
+
+
+
+
+### Some good helpful stuff
 There are a ton of great tutorials(short or detailed) out there.
