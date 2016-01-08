@@ -26,4 +26,5 @@ I would suggest using the Linux version so that we can make our workflow more ef
 ### Some good helpful stuff
 - [git - the simple guide] (http://rogerdudler.github.io/git-guide/)
 - [Git Book](http://git-scm.com/book/en/v2)
+- [Understanding the GitHub Flow](https://guides.github.com/introduction/flow/)
 - Google
