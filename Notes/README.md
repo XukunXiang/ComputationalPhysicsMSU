@@ -10,18 +10,14 @@ I would suggest using the Linux version so that we can make our workflow more ef
 ###Set up Git and GitHub
 1. Seting up an account on GitHub(_not sure about this one_)
 1. Set up Git with the exact same information(username and email)
-1. Authenticating with GitHub from Git
-		If you are maining working on HPCC, you should probably choose **Connecting over SSH** 
+1. Authenticating with GitHub from Git(choose **Connecting over SSH**, if you are working on HPCC)
 
 ###Start working:
 * Developing based on an existing project
-		* You need to use ["fork and clone"] (https://help.github.com/articles/fork-a-repo/) to get started.
-		* When copy the clone URL, please choose *SSH* rather then **HTTPS**
-				* It should looks like "git@github.com:XukunXiang/ComputationalPhysicsMSU.git"
-
-
+	* You need to use ["fork and clone"] (https://help.github.com/articles/fork-a-repo/) to get started.
+	* When copy the clone URL, please choose *SSH* rather then **HTTPS**. It should looks like "git@github.com:XukunXiang/ComputationalPhysicsMSU.git"
 * Adding your existing project on GitHub to share with others
-		* [Adding an existing project to Github](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
+	* [Adding an existing project to Github](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
 			
 
 
