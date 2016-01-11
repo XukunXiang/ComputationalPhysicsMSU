@@ -5,8 +5,6 @@ I am a novice for Git, but I will try to cover all the basic commands and proced
 
 Basicallly just go through the [GitHub Bootcamp](https://help.github.com/categories/bootcamp/) and you should be ready to go.
 
-I would suggest using the Linux version so that we can make our workflow more efficient.
-
 ###Set up Git and GitHub
 1. Seting up an account on GitHub
 1. Set up Git with the exact same information(username and email)
