@@ -20,7 +20,7 @@ I would suggest using the Linux version so that we can make our workflow more ef
 	* Please follow the instruction on [GitHub Help--Adding an existing project to Github](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line)
 
 ###Next Steps
-- **Creating Branches**: [Branches](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshellhttps://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) allow you to build new features or test out ideas without putting your main project at risk.
+- **Creating Branches**: [Branches](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) allow you to build new features or test out ideas without putting your main project at risk.
 - **Opening pull requests**: If you are hoping to contribute back to the original repository(or want to hand-in your hoemwork), you can send a request to the original author to pull your fork into their repository by submitting a [pull request](https://help.github.com/articles/using-pull-requests/)
 
 ### Some good helpful stuff
