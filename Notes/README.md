@@ -28,3 +28,12 @@ I would suggest using the Linux version so that we can make our workflow more ef
 - [Git Book](http://git-scm.com/book/en/v2)
 - [Understanding the GitHub Flow](https://guides.github.com/introduction/flow/)
 - Google
+
+### Workflow
+Here is a simple practice that you can go through to check if you are understanding the workflow
+1. To start, **fork** a project repository
+2. **Clone** the repository to your computer/local account
+3. Modify the files and **commit** changes to complete your solution
+4. **Push** the changes up to GitHub
+5. Create a **pull request** on the origianl project repository to turn in the assignment. You can continue to submit changes after you create your pull request -- simply commit and push them
+
