@@ -21,7 +21,7 @@ I would suggest using the Linux version so that we can make our workflow more ef
 
 ###Next Steps
 - **Creating Branches**: [Branches](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) allow you to build new features or test out ideas without putting your main project at risk.
-- **Opening pull requests**: If you are hoping to contribute back to the original repository(or want to hand-in your hoemwork), you can send a request to the original author to pull your fork into their repository by submitting a [pull request](https://help.github.com/articles/using-pull-requests/). You can also practicing **pull requests** in our [List of students](https://github.com/XukunXiang/Students_SS2016)
+- **Opening pull requests**: If you are hoping to contribute back to the original repository(or want to hand-in your hoemwork), you can send a request to the original author to pull your fork into their repository by submitting a [pull request](https://help.github.com/articles/using-pull-requests/).
 
 ### Some good helpful stuff
 - [git - the simple guide] (http://rogerdudler.github.io/git-guide/)
@@ -34,8 +34,13 @@ Here is a simple practice that you can go through to check if you are understand
 
 1. To start, **fork** a project repository
 1. **Clone** the repository to your computer/local account
-1. Modify the files and **commit** changes to complete your solution
+1. Modify the files and **commit** changes to complete your solution(spend sometime with __Branches__ if you like :smile:)
 1. **Push** the changes up to GitHub
 1. Create a **pull request** on the origianl project repository to turn in the assignment. You can continue to submit changes after you create your pull request -- simply commit and push them
+ 
+You can practice the whole workflow in the [List of students](https://github.com/XukunXiang/Students_SS2016) and introduce yourself briefly by the way. :bowtie:
+
+
+
 
 
