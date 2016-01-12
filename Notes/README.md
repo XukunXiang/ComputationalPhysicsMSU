@@ -5,7 +5,7 @@ I am a novice for Git, but I will try to cover all the basic commands and proced
 
 Basicallly just go through the [GitHub Bootcamp](https://help.github.com/categories/bootcamp/) and you should be ready to go.
 
-###Set up Git and GitHub
+##Set up Git and GitHub
 1. Seting up an account on GitHub
 1. Set up Git with the exact same information(username and email)
 1. Authenticating with GitHub from Git(choose **Connecting over SSH**, if you are working on HPCC)
