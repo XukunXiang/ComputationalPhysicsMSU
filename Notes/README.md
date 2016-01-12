@@ -5,7 +5,7 @@ I am a novice for Git, but I will try to cover all the basic commands and proced
 
 Basicallly just go through the [GitHub Bootcamp](https://help.github.com/categories/bootcamp/) and you should be ready to go.
 
-##Set up Git and GitHub
+###Set up Git and GitHub
 1. Seting up an account on GitHub
 1. Set up Git with the exact same information(username and email)
 1. Authenticating with GitHub from Git(choose **Connecting over SSH**, if you are working on HPCC)
@@ -19,7 +19,7 @@ Basicallly just go through the [GitHub Bootcamp](https://help.github.com/categor
 
 ###Next Steps
 - **Creating Branches**: [Branches](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) allow you to build new features or test out ideas without putting your main project at risk.
-- **Opening pull requests**: If you are hoping to contribute back to the original repository(or want to hand-in your hoemwork), you can send a request to the original author to pull your fork into their repository by submitting a [pull request](https://help.github.com/articles/using-pull-requests/).
+- **Opening pull requests**: If you are hoping to contribute back to the original repository, you can send a request to the original author to pull your fork into their repository by submitting a [pull request](https://help.github.com/articles/using-pull-requests/).
 
 ### Some good helpful stuff
 - [git - the simple guide](http://rogerdudler.github.io/git-guide/)
@@ -28,7 +28,7 @@ Basicallly just go through the [GitHub Bootcamp](https://help.github.com/categor
 - Google
 
 ###Workflow
-Here is a simple practice that you can go through to check if you are understanding the workflow
+Here is a simple practice that you can go through to check all the basic skills of Git and GitHub.
 
 1. To start, **fork** a project repository
 1. **Clone** the repository to your computer/local account
