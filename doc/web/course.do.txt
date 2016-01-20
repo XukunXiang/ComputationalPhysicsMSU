@@ -45,9 +45,9 @@ chapters = {
  * HTML:
    * "Plain html": "${pub_url}/${name}/html/${name}.html"
    * "reveal.js beige slide style": "${pub_url}/${name}/html/${name}-reveal.html"
+   * "Bootstrap  slide style, easy for reading on mobile devices": "${pub_url}/${name}/html/${name}-bs.html"
  * iPython notebook:
    * "ipynb file": "${pub_url}/${name}/ipynb/${name}.ipynb"
-
 </%def>
 
 <%def name="slide_types(name)">
@@ -84,7 +84,11 @@ ${text_types(ch)}
 !split
 ===== Teaching schedule Spring 2016 =====
 
-Lectures are in room TBD while exercises are at the computer lab, room TBD at the Department of Physics and Astronomy. 
+Lectures are 1-3pm Wednesdays (BPS4270) and  7-9pm Wednesdays (BPS1300) while exercises and projects are 2-4pm Thursdays and 1-3pm Fridays in BPS1240. 
+
+
+
+
 
 
 |----------------------------------------------------------------------------------------------------------------------------|
