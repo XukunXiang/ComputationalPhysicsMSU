@@ -43,6 +43,7 @@ You can practice the whole workflow in the [List of students](https://github.com
 ###Introduction
 
 1. Try to avoid calculating the difference of two close numbers
-1. Do not push `h` too hard
+1. Do not push `h` too hard, since the roundoff error will kick in after a certain threshold
+1. There is one question about the range of the real number, need to look around and find the answer.
 
 
