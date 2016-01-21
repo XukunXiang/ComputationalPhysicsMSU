@@ -39,6 +39,10 @@ Here is a simple practice that you can go through to check all the basic skills 
 You can practice the whole workflow in the [List of students](https://github.com/XukunXiang/Students_SS2016) and introduce yourself briefly by the way. :bowtie:
 
 
+##Notes for the Lectures
+###Introduction
 
+1. Try to avoid calculating the difference of two close numbers
+1. Do not push `h` too hard
 
 
