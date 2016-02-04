@@ -38,6 +38,10 @@ Here is a simple practice that you can go through to check all the basic skills 
  
 You can practice the whole workflow in the [List of students](https://github.com/XukunXiang/Students_SS2016) and introduce yourself briefly by the way. :bowtie:
 
+## Notes for using "Armadillo"
+- In Linux[HPCC], since hpcc do not load `blas` and `lapack` by default, we need to load corresponding modules before we can compile. 
+	- We need to use the uninstallation version of command to compile the code
+	- In HPCC, we can use `openblas` instead of `blas`
 
 ##Notes for the Lectures
 ###Introduction
