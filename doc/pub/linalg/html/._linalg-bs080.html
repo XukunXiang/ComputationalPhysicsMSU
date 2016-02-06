@@ -236,7 +236,7 @@ MathJax.Hub.Config({
      <!-- navigation toc: --> <li><a href="._linalg-bs011.html#___sec10" style="font-size: 80%;">Matrix Handling in C/C++, Static and Dynamical allocation</a></li>
      <!-- navigation toc: --> <li><a href="._linalg-bs012.html#___sec11" style="font-size: 80%;">Matrix Handling in C/C++</a></li>
      <!-- navigation toc: --> <li><a href="._linalg-bs013.html#___sec12" style="font-size: 80%;">Matrix Handling in C/C++</a></li>
-     <!-- navigation toc: --> <li><a href="#___sec13" style="font-size: 80%;">Matrix Handling in Fortran 90/95</a></li>
+     <!-- navigation toc: --> <li><a href="._linalg-bs014.html#___sec13" style="font-size: 80%;">Matrix Handling in Fortran 90/95</a></li>
      <!-- navigation toc: --> <li><a href="._linalg-bs015.html#___sec14" style="font-size: 80%;">Dynamic memory allocation in C/C++</a></li>
      <!-- navigation toc: --> <li><a href="._linalg-bs016.html#___sec15" style="font-size: 80%;">Matrix Handling in C/C++, Dynamic Allocation</a></li>
      <!-- navigation toc: --> <li><a href="._linalg-bs017.html#___sec16" style="font-size: 80%;">Armadillo, recommended!!</a></li>
@@ -302,7 +302,7 @@ MathJax.Hub.Config({
      <!-- navigation toc: --> <li><a href="._linalg-bs077.html#___sec76" style="font-size: 80%;">Splines</a></li>
      <!-- navigation toc: --> <li><a href="._linalg-bs078.html#___sec77" style="font-size: 80%;">Splines</a></li>
      <!-- navigation toc: --> <li><a href="._linalg-bs079.html#___sec78" style="font-size: 80%;">Splines</a></li>
-     <!-- navigation toc: --> <li><a href="._linalg-bs080.html#___sec79" style="font-size: 80%;">Splines</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec79" style="font-size: 80%;">Splines</a></li>
 
         </ul>
       </li>
@@ -315,76 +315,42 @@ MathJax.Hub.Config({
 
 <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
 
-<a name="part0014"></a>
+<a name="part0080"></a>
 <!-- !split -->
 
-<h2 id="___sec13">Matrix Handling in Fortran 90/95 </h2>
-
-<p>
+<h2 id="___sec79">Splines </h2>
 <div class="panel panel-default">
 <div class="panel-body">
+Thereafter, if you wish to make  various interpolations, you need to call the function 
 <p>
 
-<!-- code=fortran (!bc fcod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">   <span style="color: #008000; font-weight: bold">ALLOCATE</span> (a(N,N), b(N,N), c(N,N))
-   <span style="color: #008000; font-weight: bold">DO </span>j<span style="color: #666666">=1</span>,  N
-      <span style="color: #008000; font-weight: bold">DO </span>i<span style="color: #666666">=1</span>, N
-         a(i,j)<span style="color: #666666">=</span>b(i,j)<span style="color: #666666">+</span>c(i,j)
-      ENDDO
-   ENDDO
-   ...
-   <span style="color: #008000; font-weight: bold">DEALLOCATE</span>(a,b,c)
+<!-- code=c++ (!bc cppcod) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">splint(<span style="color: #B00040">double</span> x[], <span style="color: #B00040">double</span> y[], <span style="color: #B00040">double</span> y2a[], <span style="color: #B00040">int</span> n, <span style="color: #B00040">double</span> x, <span style="color: #B00040">double</span> <span style="color: #666666">*</span>y)
 </pre></div>
 <p>
-Fortran 90 writes the above statements in a much simpler way
-
-<p>
-
-<!-- code=fortran (!bc fcod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">   a<span style="color: #666666">=</span>b<span style="color: #666666">+</span>c
-</pre></div>
-<p>
-Multiplication
-
-<p>
-
-<!-- code=fortran (!bc fcod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">   a<span style="color: #666666">=</span><span style="color: #008000">MATMUL</span>(b,c)
-</pre></div>
-<p>
-Fortran contains also the intrinsic functions TRANSPOSE and CONJUGATE.
+which takes as input
+the tabulated values \( x[0,..,n - 1] \) and \( y[0,..,n - 1] \) and the output 
+y2a[0,..,n - 1] from <em>spline</em>. It returns the value \( y \) corresponding
+to the point \( x \).
 </div>
 </div>
 
 
-<p>
 <p>
 <!-- navigation buttons at the bottom of the page -->
 <ul class="pagination">
-<li><a href="._linalg-bs013.html">&laquo;</a></li>
+<li><a href="._linalg-bs079.html">&laquo;</a></li>
   <li><a href="._linalg-bs000.html">1</a></li>
   <li><a href="">...</a></li>
-  <li><a href="._linalg-bs006.html">7</a></li>
-  <li><a href="._linalg-bs007.html">8</a></li>
-  <li><a href="._linalg-bs008.html">9</a></li>
-  <li><a href="._linalg-bs009.html">10</a></li>
-  <li><a href="._linalg-bs010.html">11</a></li>
-  <li><a href="._linalg-bs011.html">12</a></li>
-  <li><a href="._linalg-bs012.html">13</a></li>
-  <li><a href="._linalg-bs013.html">14</a></li>
-  <li class="active"><a href="._linalg-bs014.html">15</a></li>
-  <li><a href="._linalg-bs015.html">16</a></li>
-  <li><a href="._linalg-bs016.html">17</a></li>
-  <li><a href="._linalg-bs017.html">18</a></li>
-  <li><a href="._linalg-bs018.html">19</a></li>
-  <li><a href="._linalg-bs019.html">20</a></li>
-  <li><a href="._linalg-bs020.html">21</a></li>
-  <li><a href="._linalg-bs021.html">22</a></li>
-  <li><a href="._linalg-bs022.html">23</a></li>
-  <li><a href="._linalg-bs023.html">24</a></li>
-  <li><a href="">...</a></li>
-  <li><a href="._linalg-bs080.html">81</a></li>
-  <li><a href="._linalg-bs015.html">&raquo;</a></li>
+  <li><a href="._linalg-bs072.html">73</a></li>
+  <li><a href="._linalg-bs073.html">74</a></li>
+  <li><a href="._linalg-bs074.html">75</a></li>
+  <li><a href="._linalg-bs075.html">76</a></li>
+  <li><a href="._linalg-bs076.html">77</a></li>
+  <li><a href="._linalg-bs077.html">78</a></li>
+  <li><a href="._linalg-bs078.html">79</a></li>
+  <li><a href="._linalg-bs079.html">80</a></li>
+  <li class="active"><a href="._linalg-bs080.html">81</a></li>
 </ul>
 <!-- ------------------- end of main content --------------- -->
 
