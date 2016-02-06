@@ -39,7 +39,12 @@ Here is a simple practice that you can go through to check all the basic skills 
 You can practice the whole workflow in the [List of students](https://github.com/XukunXiang/Students_SS2016) and introduce yourself briefly by the way. :bowtie:
 
 ## Notes for using "Armadillo"
-- In Linux[HPCC], since hpcc do not load `blas` and `lapack` by default, we need to load corresponding modules before we can compile. 
+### For Windows
+- here is the instrcutions for Armadillo(6.500.4) with Visual Studio Express 2015 according to [How to use Armadillo(3.920.2) on Windows(VS 2010)](http://codeyarns.com/2013/11/15/how-to-use-armadillo-on-windows/):
+	- 
+	
+###For Linux[HPCC]
+- Since hpcc do not load `blas` and `lapack` by default, we need to load corresponding modules before we can compile. 
 	- We need to use the uninstallation version of command to compile the code
 	- In HPCC, we can use `openblas` instead of `blas`
 
