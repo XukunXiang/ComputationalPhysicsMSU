@@ -206,7 +206,7 @@ MathJax.Hub.Config({
      <!-- navigation toc: --> <li><a href="._ode-bs016.html#___sec15" style="font-size: 80%;">Differential Equations</a></li>
      <!-- navigation toc: --> <li><a href="._ode-bs017.html#___sec16" style="font-size: 80%;">The Verlet method</a></li>
      <!-- navigation toc: --> <li><a href="._ode-bs018.html#___sec17" style="font-size: 80%;">The Verlet method</a></li>
-     <!-- navigation toc: --> <li><a href="#___sec18" style="font-size: 80%;">The velocity Verlet method</a></li>
+     <!-- navigation toc: --> <li><a href="._ode-bs019.html#___sec18" style="font-size: 80%;">The velocity Verlet method</a></li>
      <!-- navigation toc: --> <li><a href="._ode-bs020.html#___sec19" style="font-size: 80%;">The velocity Verlet method</a></li>
      <!-- navigation toc: --> <li><a href="._ode-bs021.html#___sec20" style="font-size: 80%;">The velocity Verlet method</a></li>
      <!-- navigation toc: --> <li><a href="._ode-bs022.html#___sec21" style="font-size: 80%;">The velocity Verlet method</a></li>
@@ -241,7 +241,7 @@ MathJax.Hub.Config({
      <!-- navigation toc: --> <li><a href="._ode-bs051.html#___sec50" style="font-size: 80%;">Adaptive methods, RKF45</a></li>
      <!-- navigation toc: --> <li><a href="._ode-bs052.html#___sec51" style="font-size: 80%;">"Solar system code, main program":"https://github.com/CompPhysics/ComputationalPhysicsMSU/tree/master/doc/Programs/OOExamples"</a></li>
      <!-- navigation toc: --> <li><a href="._ode-bs053.html#___sec52" style="font-size: 80%;">"Solar system code, main program":"https://github.com/CompPhysics/ComputationalPhysicsMSU/tree/master/doc/Programs/OOExamples", header file</a></li>
-     <!-- navigation toc: --> <li><a href="._ode-bs054.html#___sec53" style="font-size: 80%;">"Solar system code, main program":"https://github.com/CompPhysics/ComputationalPhysicsMSU/tree/master/doc/Programs/OOExamples", header file, cpp file for planet class, simple example</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec53" style="font-size: 80%;">"Solar system code, main program":"https://github.com/CompPhysics/ComputationalPhysicsMSU/tree/master/doc/Programs/OOExamples", header file, cpp file for planet class, simple example</a></li>
 
         </ul>
       </li>
@@ -254,61 +254,47 @@ MathJax.Hub.Config({
 
 <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
 
-<a name="part0019"></a>
+<a name="part0054"></a>
 <!-- !split -->
 
-<h2 id="___sec18">The velocity Verlet method </h2>
-<div class="panel panel-default">
-<div class="panel-body">
-We note that the truncation error goes like \( O(h^4) \) since all the odd terms cancel when we add the two Taylor expansions.
-We see also that the velocity is not directly included in the equation since the function
-\( x^{(2)}=a(x,t) \) is supposed to be known. If we need the velocity however, we can compute it using the well-known
-formula
-$$
-x^{(1)}_i=\frac{x_{i+1}-x_{i-1}}{2h}+O(h^2).
-$$
-
-We note that the velocity has a truncation error which goes like \( O(h^2) \). In for example so-called Molecular dynamics calculations,
-since the acceleration is normally known via Newton's second law, there is seldomly a need for computing the velocity.
-
+<h2 id="___sec53"><a href="https://github.com/CompPhysics/ComputationalPhysicsMSU/tree/master/doc/Programs/OOExamples" target="_self">Solar system code, main program</a>, header file, cpp file for planet class, simple example </h2>
 <p>
-We note also that the algorithm for the position is not self-starting since, for \( i=0 \) it depends on the value of \( x \) 
-at the fictitious value \( x_{-1} \).
 
+<!-- code=c++ (!bc cppcod) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">#include &quot;planet.h&quot;</span>
+<span style="color: #408080; font-style: italic">// Simple constructor</span>
+planet<span style="color: #666666">::</span>planet()
+{
+};
+<span style="color: #408080; font-style: italic">// Improved constructor</span>
+planet<span style="color: #666666">::</span>planet(<span style="color: #B00040">double</span> M, <span style="color: #B00040">double</span> x,<span style="color: #B00040">double</span> y, <span style="color: #B00040">double</span> z, <span style="color: #B00040">double</span> vx, <span style="color: #B00040">double</span> vy, <span style="color: #B00040">double</span> vz){
+mass <span style="color: #666666">=</span> M;
+position[<span style="color: #666666">0</span>] <span style="color: #666666">=</span> x;
+position[<span style="color: #666666">1</span>] <span style="color: #666666">=</span> y;
+position[<span style="color: #666666">2</span>] <span style="color: #666666">=</span> z;
+
+velocity[<span style="color: #666666">0</span>] <span style="color: #666666">=</span> vx;
+velocity[<span style="color: #666666">1</span>] <span style="color: #666666">=</span> vy;
+velocity[<span style="color: #666666">2</span>] <span style="color: #666666">=</span> vz;
+};
+</pre></div>
 <p>
-We can amend this by introducing the velocity Verlet method.
-</div>
-</div>
 
-
-<p>
 <p>
 <!-- navigation buttons at the bottom of the page -->
 <ul class="pagination">
-<li><a href="._ode-bs018.html">&laquo;</a></li>
+<li><a href="._ode-bs053.html">&laquo;</a></li>
   <li><a href="._ode-bs000.html">1</a></li>
   <li><a href="">...</a></li>
-  <li><a href="._ode-bs011.html">12</a></li>
-  <li><a href="._ode-bs012.html">13</a></li>
-  <li><a href="._ode-bs013.html">14</a></li>
-  <li><a href="._ode-bs014.html">15</a></li>
-  <li><a href="._ode-bs015.html">16</a></li>
-  <li><a href="._ode-bs016.html">17</a></li>
-  <li><a href="._ode-bs017.html">18</a></li>
-  <li><a href="._ode-bs018.html">19</a></li>
-  <li class="active"><a href="._ode-bs019.html">20</a></li>
-  <li><a href="._ode-bs020.html">21</a></li>
-  <li><a href="._ode-bs021.html">22</a></li>
-  <li><a href="._ode-bs022.html">23</a></li>
-  <li><a href="._ode-bs023.html">24</a></li>
-  <li><a href="._ode-bs024.html">25</a></li>
-  <li><a href="._ode-bs025.html">26</a></li>
-  <li><a href="._ode-bs026.html">27</a></li>
-  <li><a href="._ode-bs027.html">28</a></li>
-  <li><a href="._ode-bs028.html">29</a></li>
-  <li><a href="">...</a></li>
-  <li><a href="._ode-bs054.html">55</a></li>
-  <li><a href="._ode-bs020.html">&raquo;</a></li>
+  <li><a href="._ode-bs046.html">47</a></li>
+  <li><a href="._ode-bs047.html">48</a></li>
+  <li><a href="._ode-bs048.html">49</a></li>
+  <li><a href="._ode-bs049.html">50</a></li>
+  <li><a href="._ode-bs050.html">51</a></li>
+  <li><a href="._ode-bs051.html">52</a></li>
+  <li><a href="._ode-bs052.html">53</a></li>
+  <li><a href="._ode-bs053.html">54</a></li>
+  <li class="active"><a href="._ode-bs054.html">55</a></li>
 </ul>
 <!-- ------------------- end of main content --------------- -->
 

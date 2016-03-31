@@ -206,7 +206,7 @@ MathJax.Hub.Config({
      <!-- navigation toc: --> <li><a href="._ode-bs016.html#___sec15" style="font-size: 80%;">Differential Equations</a></li>
      <!-- navigation toc: --> <li><a href="._ode-bs017.html#___sec16" style="font-size: 80%;">The Verlet method</a></li>
      <!-- navigation toc: --> <li><a href="._ode-bs018.html#___sec17" style="font-size: 80%;">The Verlet method</a></li>
-     <!-- navigation toc: --> <li><a href="#___sec18" style="font-size: 80%;">The velocity Verlet method</a></li>
+     <!-- navigation toc: --> <li><a href="._ode-bs019.html#___sec18" style="font-size: 80%;">The velocity Verlet method</a></li>
      <!-- navigation toc: --> <li><a href="._ode-bs020.html#___sec19" style="font-size: 80%;">The velocity Verlet method</a></li>
      <!-- navigation toc: --> <li><a href="._ode-bs021.html#___sec20" style="font-size: 80%;">The velocity Verlet method</a></li>
      <!-- navigation toc: --> <li><a href="._ode-bs022.html#___sec21" style="font-size: 80%;">The velocity Verlet method</a></li>
@@ -238,7 +238,7 @@ MathJax.Hub.Config({
      <!-- navigation toc: --> <li><a href="._ode-bs048.html#___sec47" style="font-size: 80%;">Adaptive methods</a></li>
      <!-- navigation toc: --> <li><a href="._ode-bs049.html#___sec48" style="font-size: 80%;">Adaptive methods</a></li>
      <!-- navigation toc: --> <li><a href="._ode-bs050.html#___sec49" style="font-size: 80%;">Adaptive methods, RKF45</a></li>
-     <!-- navigation toc: --> <li><a href="._ode-bs051.html#___sec50" style="font-size: 80%;">Adaptive methods, RKF45</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec50" style="font-size: 80%;">Adaptive methods, RKF45</a></li>
      <!-- navigation toc: --> <li><a href="._ode-bs052.html#___sec51" style="font-size: 80%;">"Solar system code, main program":"https://github.com/CompPhysics/ComputationalPhysicsMSU/tree/master/doc/Programs/OOExamples"</a></li>
      <!-- navigation toc: --> <li><a href="._ode-bs053.html#___sec52" style="font-size: 80%;">"Solar system code, main program":"https://github.com/CompPhysics/ComputationalPhysicsMSU/tree/master/doc/Programs/OOExamples", header file</a></li>
      <!-- navigation toc: --> <li><a href="._ode-bs054.html#___sec53" style="font-size: 80%;">"Solar system code, main program":"https://github.com/CompPhysics/ComputationalPhysicsMSU/tree/master/doc/Programs/OOExamples", header file, cpp file for planet class, simple example</a></li>
@@ -254,29 +254,30 @@ MathJax.Hub.Config({
 
 <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
 
-<a name="part0019"></a>
+<a name="part0051"></a>
 <!-- !split -->
 
-<h2 id="___sec18">The velocity Verlet method </h2>
+<h2 id="___sec50">Adaptive methods, RKF45 </h2>
 <div class="panel panel-default">
 <div class="panel-body">
-We note that the truncation error goes like \( O(h^4) \) since all the odd terms cancel when we add the two Taylor expansions.
-We see also that the velocity is not directly included in the equation since the function
-\( x^{(2)}=a(x,t) \) is supposed to be known. If we need the velocity however, we can compute it using the well-known
-formula
+An approximation to the solution of the ODE is made using a Runge-Kutta method of order 4:
 $$
-x^{(1)}_i=\frac{x_{i+1}-x_{i-1}}{2h}+O(h^2).
+y_{k+1} = y_k  + \frac{25}{216}k_1+\frac{1408}{2565}k_3 +\frac{2197}{4101}k_4-\frac{1}{5}k_5,
 $$
 
-We note that the velocity has a truncation error which goes like \( O(h^2) \). In for example so-called Molecular dynamics calculations,
-since the acceleration is normally known via Newton's second law, there is seldomly a need for computing the velocity.
+where the four function values \( k_1 \) , \( k_3 \) , \( k_4 \) , and \( k_5 \) are used. Notice that \( k_2 \) is not used  here.
+A better value for the solution is determined using a Runge-Kutta
+method of order 5:
+$$
+z_{k+1} = y_k + \frac{16}{135}k_1+\frac{6656}{12825}k_3 +\frac{28561}{56430}k_4-\frac{9}{50}k_5+\frac{2}{55}k_6.
+$$
 
-<p>
-We note also that the algorithm for the position is not self-starting since, for \( i=0 \) it depends on the value of \( x \) 
-at the fictitious value \( x_{-1} \).
+The optimal time step \( \alpha h \) is then determined by
+$$
+\alpha = \left( \frac{\xi h}{2|z_{k+1}-y_{k+1}|}\right)^{1/4},
+$$
 
-<p>
-We can amend this by introducing the velocity Verlet method.
+with \( \xi \) our defined tolerance.
 </div>
 </div>
 
@@ -285,30 +286,22 @@ We can amend this by introducing the velocity Verlet method.
 <p>
 <!-- navigation buttons at the bottom of the page -->
 <ul class="pagination">
-<li><a href="._ode-bs018.html">&laquo;</a></li>
+<li><a href="._ode-bs050.html">&laquo;</a></li>
   <li><a href="._ode-bs000.html">1</a></li>
   <li><a href="">...</a></li>
-  <li><a href="._ode-bs011.html">12</a></li>
-  <li><a href="._ode-bs012.html">13</a></li>
-  <li><a href="._ode-bs013.html">14</a></li>
-  <li><a href="._ode-bs014.html">15</a></li>
-  <li><a href="._ode-bs015.html">16</a></li>
-  <li><a href="._ode-bs016.html">17</a></li>
-  <li><a href="._ode-bs017.html">18</a></li>
-  <li><a href="._ode-bs018.html">19</a></li>
-  <li class="active"><a href="._ode-bs019.html">20</a></li>
-  <li><a href="._ode-bs020.html">21</a></li>
-  <li><a href="._ode-bs021.html">22</a></li>
-  <li><a href="._ode-bs022.html">23</a></li>
-  <li><a href="._ode-bs023.html">24</a></li>
-  <li><a href="._ode-bs024.html">25</a></li>
-  <li><a href="._ode-bs025.html">26</a></li>
-  <li><a href="._ode-bs026.html">27</a></li>
-  <li><a href="._ode-bs027.html">28</a></li>
-  <li><a href="._ode-bs028.html">29</a></li>
-  <li><a href="">...</a></li>
+  <li><a href="._ode-bs043.html">44</a></li>
+  <li><a href="._ode-bs044.html">45</a></li>
+  <li><a href="._ode-bs045.html">46</a></li>
+  <li><a href="._ode-bs046.html">47</a></li>
+  <li><a href="._ode-bs047.html">48</a></li>
+  <li><a href="._ode-bs048.html">49</a></li>
+  <li><a href="._ode-bs049.html">50</a></li>
+  <li><a href="._ode-bs050.html">51</a></li>
+  <li class="active"><a href="._ode-bs051.html">52</a></li>
+  <li><a href="._ode-bs052.html">53</a></li>
+  <li><a href="._ode-bs053.html">54</a></li>
   <li><a href="._ode-bs054.html">55</a></li>
-  <li><a href="._ode-bs020.html">&raquo;</a></li>
+  <li><a href="._ode-bs052.html">&raquo;</a></li>
 </ul>
 <!-- ------------------- end of main content --------------- -->
 
